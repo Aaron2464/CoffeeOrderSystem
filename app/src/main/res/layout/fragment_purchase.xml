@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:text="confirm"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageBtn_espresso"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/espresso"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_americano"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/americano"
+                app:layout_constraintStart_toEndOf="@+id/imageBtn_espresso"
+                app:layout_constraintTop_toTopOf="@+id/imageBtn_espresso" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_latte"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/latte"
+                app:layout_constraintStart_toEndOf="@+id/imageBtn_americano"
+                app:layout_constraintTop_toTopOf="@+id/imageBtn_americano" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_mocha"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/mocha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageBtn_latte"
+                app:layout_constraintTop_toTopOf="@+id/imageBtn_latte" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_singleorigin"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/singleorigin"
+                app:layout_constraintStart_toStartOf="@+id/imageBtn_espresso"
+                app:layout_constraintTop_toBottomOf="@+id/imageBtn_espresso" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_blacktea"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/blacktea"
+                app:layout_constraintStart_toEndOf="@+id/imageBtn_singleorigin"
+                app:layout_constraintTop_toTopOf="@+id/imageBtn_singleorigin" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_greentea"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/greentea"
+                app:layout_constraintStart_toEndOf="@+id/imageBtn_blacktea"
+                app:layout_constraintTop_toTopOf="@+id/imageBtn_blacktea" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
