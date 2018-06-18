@@ -32,7 +32,7 @@ public class PurchaseItemAdapter extends RecyclerView.Adapter<PurchaseItemAdapte
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Picasso.get().load(mCoffeeItems.get(position).getImage()).placeholder(R.mipmap.placeholder_coffee).into(holder.mImageView_gridcoffee);
+        Picasso.get().load(mCoffeeItems.get(position).getImage()).fit().centerCrop().placeholder(R.mipmap.placeholder_coffee).into(holder.mImageView_gridcoffee);
     }
 
     @Override
