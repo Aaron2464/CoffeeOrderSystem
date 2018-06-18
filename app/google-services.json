@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "533229310227",
+    "firebase_url": "https://coffeeordersystem-e16c0.firebaseio.com",
+    "project_id": "coffeeordersystem-e16c0",
+    "storage_bucket": "coffeeordersystem-e16c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533229310227:android:05565daabac4dbf3",
+        "android_client_info": {
+          "package_name": "com.aaron.coffeeordersystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533229310227-bgvbb7u9hmekq3d6nkh9fsmems6d3q66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aaron.coffeeordersystem",
+            "certificate_hash": "1cad61418644638ee09d00d599de2ed2ac6578c6"
+          }
+        },
+        {
+          "client_id": "533229310227-ur9692dq93ivkiaeljfk5l5t4pi6j875.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "533229310227-ur9692dq93ivkiaeljfk5l5t4pi6j875.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcvARgwWP6ey0BJMP-XM-oxpLLktnloKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533229310227-ur9692dq93ivkiaeljfk5l5t4pi6j875.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

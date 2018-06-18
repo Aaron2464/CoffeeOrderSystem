@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Coffee Order System</string>
+    <string name="activity_coffee_order_system">CoffeeOrderSystem</string>
+    <string name="navigation_purchase">Purchase</string>
+    <string name="navigation_list">List</string>
+
 </resources>
