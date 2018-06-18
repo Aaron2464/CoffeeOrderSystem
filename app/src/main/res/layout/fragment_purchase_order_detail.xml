@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_coffeeimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/placeholder_coffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtview_coffeename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Latte"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_coffeeimage"
+        app:layout_constraintTop_toTopOf="@+id/imageView_coffeeimage" />
+
+    <TextView
+        android:id="@+id/txtview_coffeetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Type"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_coffeesugar"
+        app:layout_constraintStart_toEndOf="@+id/imageView_coffeeimage" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/txtview_coffeetype"
+        app:layout_constraintTop_toTopOf="@+id/txtview_coffeetype">
+
+        <RadioButton
+            android:id="@+id/rdobtn_type_iced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iced "
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rdobtn_type_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtview_coffeesugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_coffeeimage"
+        app:layout_constraintStart_toStartOf="@+id/txtview_coffeetype" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/txtview_coffeesugar">
+
+        <RadioButton
+            android:id="@+id/rdobtn_sugar_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rdobtn_sugar_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
