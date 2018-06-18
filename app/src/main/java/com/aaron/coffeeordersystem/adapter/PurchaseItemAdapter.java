@@ -47,14 +47,11 @@ public class PurchaseItemAdapter extends RecyclerView.Adapter<PurchaseItemAdapte
         public ViewHolder(final View itemview) {
             super(itemview);
             mImageView_gridcoffee = itemview.findViewById(R.id.imageview_gridcoffee);
-
             mImageView_gridcoffee.setOnClickListener(this);
         }
 
         @Override
-        public void onClick(View v) {
-
-
+        public void onClick(View view) {
         }
     }
 }
